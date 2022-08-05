@@ -1,0 +1,153 @@
+ *{
+	 box-sizing:border-box;
+	 font-family:calibri;
+}
+
+body{
+	margin:0;	
+}
+
+/*color*/
+.text-red{color:red;}
+.text-white{color:white;}
+.text-black{color:black;}
+.bg-light{background:#f1f1f1;}
+
+/*font size*/
+.pheading{
+	font-size:3em;
+	text-transform:capitalize;
+	font-weight:bold;
+}
+
+.sheading{font-size:1.5em; text-transform:uppercase; font-weight:bold;}
+	p{
+		font-size:12pt;
+		line-height:25px;
+		
+	}
+	
+	/*alignment*/
+	.text-center{text-align:center;}
+	.text-right{text-align:right;}
+	
+/*margin padding*/
+.mt-0{margin-top:60px;}
+.mt{margin-top:48px;}
+.mt-1{margin-top:20px;}
+.mt-2{margin-top:10px;}
+.pd{padding:1% 5%;}
+
+/*layouting*/
+.row{
+	display:flex;
+	flex-wrap:wrap;	
+}
+
+.justify-center{justify-content:center;}
+.justify-end{justify-content:end;}
+.justify-between{justify-content:space-between;}
+.justify-around{justify-content:space-around;}
+
+header{
+	width:100%;
+	background:rgba(1,1,1,.7);
+	position:fixed;
+	}
+	
+	header .row .webname{width:20%; font-size:1.5em;}
+	header .row nav{width:80%;float:left;}
+	
+	header .row nav ul{
+		list-style:none;
+		padding:0;
+		margin:0;
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:end;
+		
+	}
+	
+	nav ul li{
+	width:100px;	
+	line-height:30px;
+	text-align:center;
+}
+
+nav ul li a{
+	text-decoration:none;
+	color:white;
+	display:block;
+	text-transform:uppercase;
+	
+}
+
+.banner{
+	width:100%;
+	min-height:100vh;
+	background:linear-gradient(rgba(1,1,1,.8),rgba(1,1,1,.8)),url(../pic/banner.jpg);
+	background-size:cover;
+	position:relative;	
+	z-index:-1;
+}
+
+.banner .bannerContent{
+	width:50%;
+	position:absolute;
+	left:25%;
+	top:30%;
+	color:white;
+
+	
+}
+
+.txt1{
+	font-weight:bold;
+	text-transform:uppercase;
+	word-spacing:5pt;
+	letter-spacing:3pt;
+	
+}
+
+.txt2{
+	font-size:4em;
+	text-transform:capitalize;
+	font-weight:bold;
+	
+}
+
+.btn{
+	padding:10px 30px; 
+	background:red; 
+	border-radius:25px; 
+	border:none; 
+	color:white; 
+	text-transform:uppercase; 
+	font-size:13pt;
+	}
+
+
+.course{
+	padding:5%;
+	
+	
+}
+
+.course .row .column{
+	width:32%;
+	background:#f1f1f1;
+	border-radius:10px;
+	padding:1% 15px;
+}
+
+
+
+ .row .column .circle{
+	width:100px;
+	height:100px;
+	background:white;
+	border-radius:50%;
+	margin-top:-50px;
+	border:5px solid #f1f1f1;
+	
+}
